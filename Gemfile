@@ -52,7 +52,6 @@ group :development, :test do
   gem 'rspec-sonarqube-formatter'
   # gem 'database_cleaner'
   gem 'shoulda-matchers'
-  gem 'shoulda-callback-matchers'
   gem "factory_bot_rails", "~> 5.0"
   gem 'faker'
   gem 'rubocop-rspec', require: false

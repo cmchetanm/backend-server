@@ -1,7 +1,6 @@
 require 'simplecov'
 require 'spec_helper'
-require 'sidekiq/testing'
-Sidekiq::Testing.fake!
+
 require 'shoulda/matchers'
 SimpleCov.start
 ENV['RAILS_ENV'] ||= 'test'
@@ -26,7 +25,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   
   # config.include Devise::TestHelpers, type: :controller
-  config.include Devise::Test::ControllerHelpers, type: :controller
+  # config.include Devise::Test::ControllerHelpers, type: :controller
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
   config.include(Shoulda::Callback::Matchers::ActiveModel)
