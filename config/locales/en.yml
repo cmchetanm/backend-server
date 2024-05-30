@@ -28,4 +28,16 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  message:
+    inbound: 'inbound sms ok'
+    outbound: 'outbound sms ok'
+
+  error:
+    authenticate: 'Authentication failed'
+    unknown: 'unknown failure'
+    params_not_found: '%{params} parameter not found'
+    blocked_error: 'sms from %{from} to %{to} blocked by STOP request'
+    limit_reached: 'limit reached for from %{from}'
+    method_not_allowed: 'Method Not Allowed'
+    missing_params: '%{params} is missing'
+    invalid: '%{key} parameter is invalid'
