@@ -8,7 +8,7 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.enable_reloading = true
 
-  config.cache_store = :redis_cache_store, { url: ENV.fetch('REDIS_URL') }
+  config.cache_store = :redis_cache_store, { url: "redis://localhost:6379/1" }
 
   # Do not eager load code on boot.
   config.eager_load = false
