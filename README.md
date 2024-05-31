@@ -3,22 +3,24 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+## Requirements
+- Ruby 2.5.5
+- Libraries: bundler
 
-* Ruby version
+## Dependencies
+  - `bundle install`
 
-* System dependencies
+## Configuration and setup
+  - Set database username, password and host in 'database.yml':
+  - Create and setup the database:
+    `bundle exec rails db:create`
+  - I assume that you will have a dump of schema.sql file, if it's not then run this command
+    `bundle exec rails db:setup`
 
-* Configuration
+## Run
+  - Start server
+    `bundle exec rails server`
+  - And now you can visit the site with the URL http://localhost:3000
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Test
+  - `bundle exec rspec spec/`
