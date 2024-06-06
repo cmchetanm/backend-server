@@ -24,3 +24,7 @@ application up and running.
 
 ## Test
   - `bundle exec rspec spec/`
+
+## Postman Collection
+  - You can test our API endpoints using the Postman collection.
+   `https://www.postman.com/chetanmehta1612/workspace/backend-server/collection/36140358-94f5f4fe-e6fc-4009-9703-2e49317e84d8?action=share&creator=36140358`
